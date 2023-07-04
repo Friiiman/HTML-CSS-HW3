@@ -198,6 +198,7 @@ a {
 .about__content {
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
     gap: 30px;
 }
 
@@ -210,8 +211,8 @@ a {
     box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
 }
 
-.about-card__img {
-    height: 270px;
+.about-card__img--fix {
+    margin-bottom: 15px;
 }
 
 .about-card__content {
