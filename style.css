@@ -1,19 +1,20 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
 }
 
-.page-header, .page-main {
+.wrapper {
     margin: 0 auto;
     padding: 0 60px;
     max-width: 1280px;
 }
 
-.page-header {
+.page-header .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,6 +43,22 @@ a {
     color: #F25822;
 }
 
+.main-nav__link-menu {
+    position: relative;
+    padding-right: 10px;
+}
+
+.main-nav__link-menu:after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 6px;
+    right: -4px;
+    background-image: url(./img/main-nav-menuarrow.svg);
+    background-repeat: no-repeat;
+}
+
 .promo__content {
     display: flex;
     justify-content: space-between;
@@ -63,13 +80,15 @@ a {
 }
 
 .promo__button {
+    border: none;
+}
+
+.promo__button-link {
     padding: 15px 35px;
     font-weight: bold;
     color: #fff;
     background-color: #F25822;
-    border: none;
-    box-shadow: 4px 4px 8px 0 rgba(242, 88, 34, 0.2)
-;
+    box-shadow: 4px 4px 8px 0 rgba(242, 88, 34, 0.2);
     border-radius: 50px;
 }
 
@@ -77,12 +96,13 @@ a {
     margin-right: 72px;
 }
 
-.promo__button--active {
+.promo__button--gray .promo__button-link {
     padding: 0;
     font-size: 15px;
     line-height: 17px;
     color: #aaa;
-    background-color: transparent;
+    background-color: #fff;
+    border-radius: 0;
     box-shadow: none;
 }
 
@@ -91,4 +111,144 @@ a {
     justify-content: space-between;
     margin-top: 97px;
     margin-bottom: 96px;
+}
+
+.advantages .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 140px;
+    padding-bottom: 125px;
+    gap: 30px;
+}
+
+.advantages__title {
+    display: none;
+}
+
+.advantages-card {
+    width: 370px;
+    padding: 40px 30px 25px;
+}
+
+.advantages-card--active {
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+
+.advantages-card__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 70px;
+    height: 70px;
+    padding: 21px;
+    border-radius: 15px;
+}
+
+.advantages-card__icon--growing {
+    background-color: rgba(242, 88, 34, 0.25);
+}
+
+.advantages-card__icon--flash {  
+    background-color: rgba(20, 146, 17, 0.28);
+}
+
+.advantages-card__icon--pricetag {  
+    background-color: rgba(255, 205, 29, 0.24);
+}
+
+.advantages-card__title {
+    margin-bottom: 17px;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.advantages-card__text {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.advantages-card__link {
+    color: #000;
+    font-weight: bold;
+}
+
+.about {
+    background-color: #fafafa;
+    padding-top: 92px;
+    padding-bottom: 100px;
+}
+
+.about__title {
+    margin-bottom: 19px;
+    text-align: center;
+    font-size: 45px;
+    line-height: 52px;
+}
+
+.about__text {
+    margin: 0 auto 55px;
+    max-width: 682px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666;
+}
+
+.about__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.about-card {
+    width: 370px;
+    background-color: #fff;
+}
+
+.about-card--active {
+    box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+}
+
+.about-card__img {
+    height: 270px;
+}
+
+.about-card__content {
+    padding: 25px 30px 50px;
+    text-align: center;
+}
+
+.about-card__title {
+    margin-bottom: 22px;
+}
+
+.about-card__text {
+    margin-bottom: 39px;
+    color: #aaa;
+}
+
+.about-card__button {
+    border: none;
+}
+
+.about-card__button-link {
+    position: relative;
+    padding: 15px 35px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #F25822;
+    box-shadow: 4px 4px 8px 0 rgba(242, 88, 34, 0.2);
+    border-radius: 50px;
+}
+
+.about-card__button-link:after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 18px;
+    right: 20px;
+    background-image: url(./img/button-arrow.svg);
+    background-repeat: no-repeat;
 }
