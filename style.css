@@ -211,10 +211,6 @@ a {
     box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
 }
 
-.about-card__img--fix {
-    margin-bottom: 15px;
-}
-
 .about-card__content {
     padding: 25px 30px 50px;
     text-align: center;
